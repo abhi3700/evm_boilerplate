@@ -7,6 +7,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/utils/Context.sol";
 import "hardhat/console.sol";
 
+// TODO: Modify SC & its file name
 /// @title A ERC20 Token SC
 /// @author abhi3700
 /// @notice A ERC20 Token

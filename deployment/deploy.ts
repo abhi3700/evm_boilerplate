@@ -38,6 +38,7 @@ task("deploy:ERC20Token", "Deploy Escrow Contract").setAction(async function (
   taskArguments: TaskArguments,
   { ethers }
 ) {
+  // TODO: modify as per the SC written
   // We get the erc20 token contract to deploy
   const Erc20TokenFactory: ContractFactory = await ethers.getContractFactory(
     "ERC20Token"
