@@ -1,6 +1,7 @@
 # Reports
 
 ## Coverage
+<!-- TODO: Copy paste the coverage console output -->
 
 ```console
 ❯ yarn coverage
@@ -70,6 +71,7 @@ All files        |      100 |      100 |      100 |      100 |                |
 ```
 
 ## Deployment
+<!-- TODO: Copy paste the deployment console output -->
 
 ```console
 // M-1
@@ -88,6 +90,7 @@ The transaction that was sent to the network to deploy the token contract: 0x0e5
 ```
 
 ## Verify
+<!-- TODO: Copy paste the verification console output -->
 
 ```console
 ❯ yarn verify rinkeby 0x583790285609943225395c091e5D657E946574F0 "Health Token" "HLT"                                                                ⏎
