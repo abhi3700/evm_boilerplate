@@ -1,7 +1,8 @@
 {
-  "name": "escrow-contract",
+  // TODO: modify the names as per SC
+  "name": "erc20token-contract",
   "version": "0.0.1",
-  "description": "A Escrow contract for Ether token",
+  "description": "A ERC20 Token SC",
   "main": "index.js",
   "scripts": {
     "clean": "hardhat clean",
