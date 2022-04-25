@@ -12,7 +12,7 @@ import "hardhat/console.sol";
 /// @author abhi3700
 /// @notice A ERC20 Token
 /// @dev A ERC20 token
-contract ERC20Token is Ownable, Pausable, ERC20 {
+contract ERC20Token is ERC20, Ownable, Pausable {
     // ==========State variables====================================
 
     // ==========Events=============================================

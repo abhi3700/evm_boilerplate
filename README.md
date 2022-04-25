@@ -11,7 +11,8 @@ TODO: Put more info about SC
 * [**Instruction**](./instruction.md).
 * Get the **coverage** report [here](./reports.md#coverage).
 * The Escrow SC is **deployed** in Rinkeby testnet. Check the details [here](./reports.md#deployment)
-* The Escrow SC is **verified** in Rinkeby testnet. Check the details [here](./reports.md#verify) -->
+* The Escrow SC is **verified** in Rinkeby testnet. Check the details [here](./reports.md#verify) 
+-->
 
 ## Installation
 
