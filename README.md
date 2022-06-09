@@ -4,14 +4,14 @@
 
 ## About
 
-<!-- 
+<!--
 TODO: Put more info about SC
 
 * It's an **Escrow** contract.
 * [**Instruction**](./instruction.md).
 * Get the **coverage** report [here](./reports.md#coverage).
 * The Escrow SC is **deployed** in Rinkeby testnet. Check the details [here](./reports.md#deployment)
-* The Escrow SC is **verified** in Rinkeby testnet. Check the details [here](./reports.md#verify) 
+* The Escrow SC is **verified** in Rinkeby testnet. Check the details [here](./reports.md#verify)
 -->
 
 ## Installation
@@ -26,6 +26,12 @@ yarn install
 
 ```console
 yarn compile
+```
+
+### Contract size
+
+```console
+yarn contract-size
 ```
 
 ### Test
@@ -68,7 +74,7 @@ yarn coverage
 
 ### Report Gas
 
-See the gas usage per unit test and averate gas per method call:
+See the gas usage per unit test and average gas per method call:
 
 ```console
 REPORT_GAS=true yarn test
@@ -86,11 +92,15 @@ yarn clean
 
 ```console
 yarn verify <network_name> <deployed_contract_address> <constructor params>
+// TODO: add your own SC arguments or empty
+yarn verify <network_name> <deployed_contract_address> --constructor-args verify/erc20token.args.ts
 ```
 
 For multiple arguments, follow this [guide](https://hardhat.org/plugins/nomiclabs-hardhat-etherscan.html#multiple-api-keys-and-alternative-block-explorers).
 
 ### Deploy
+
+- Environment variables: Create a `.env` file with its values in [.env.example](./.env.example)
 
 #### localhost
 
@@ -104,8 +114,7 @@ $ yarn hardhat deploy:Escrow --network localhost
 
 #### ETH Testnet - Rinkeby
 
-* Environment variables: Create a `.env` file with its values in [.env.example](./.env.example)
-* Deploy the contracts
+- Deploy the contracts
 
 ```console
 yarn hardhat deploy:Escrow --network rinkeby
@@ -113,8 +122,7 @@ yarn hardhat deploy:Escrow --network rinkeby
 
 #### ETH Mainnet
 
-* Environment variables: Create a `.env` file with its values in [.env.example](./.env.example)
-* Deploy the contracts
+- Deploy the contracts
 
 ```console
 yarn hardhat deploy:Escrow --network mainnet

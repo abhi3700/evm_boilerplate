@@ -15,7 +15,9 @@
     "prettier:list-different": "prettier --config .prettierrc.json --list-different \"**/*.{js,json,md,sol,ts}\"",
     "test": "hardhat test --network hardhat",
     "typechain": "hardhat typechain",
-    "verify": "hardhat verify --network"
+    "verify": "hardhat verify --network",
+    "verify-rinkeby": "hardhat verify --network rinkeby",
+    "verify-bsctestnet": "hardhat verify --network bsctestnet"
   },
   "files": [
     "/contracts",

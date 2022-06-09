@@ -77,15 +77,15 @@ All files        |      100 |      100 |      100 |      100 |                |
 // M-1
 ❯ npx hardhat run deployment/deploy.ts --network rinkeby                                                                                                                 ⏎
 No need to generate any newer typings.
-ERC20 token SC deployed to:  0x583790285609943225395c091e5D657E946574F0
-The transaction that was sent to the network to deploy the token contract: 0x0e591038a4fac2b303167038d2f347cdd38fc0800b1d6587f7490fc5833d47a4
+ERC20 token SC deployed to:  0xa108572Ea12b700F9ef623f97464da8e89Be5A0a
+The transaction that was sent to the network to deploy the token contract: 0x5fb37f1416f7e6f2e1b00900e762b4ad5e079120c5d6589227e18ca5291bab0c
 
 // M-2
 ❯ yarn hardhat deploy:ERC20Token --network rinkeby
 yarn run v1.22.18
 $ /Users/abhi3700/F/coding/github_repos/evm_boilerplate/node_modules/.bin/hardhat deploy:ERC20Token --network rinkeby
-ERC20 token SC deployed to:  0x583790285609943225395c091e5D657E946574F0
-The transaction that was sent to the network to deploy the token contract: 0x0e591038a4fac2b303167038d2f347cdd38fc0800b1d6587f7490fc5833d47a4
+ERC20 token SC deployed to:  0xa108572Ea12b700F9ef623f97464da8e89Be5A0a
+The transaction that was sent to the network to deploy the token contract: 0x5fb37f1416f7e6f2e1b00900e762b4ad5e079120c5d6589227e18ca5291bab0c
 ✨  Done in 23.16s.
 ```
 
@@ -93,16 +93,20 @@ The transaction that was sent to the network to deploy the token contract: 0x0e5
 <!-- TODO: Copy paste the verification console output -->
 
 ```console
-❯ yarn verify rinkeby 0x583790285609943225395c091e5D657E946574F0 "Health Token" "HLT"                                                                ⏎
+// M-1
+❯ yarn verify rinkeby 0x29D00e504Ee554A57a1dD6170980DD032E8C0874 "Health Token" "HLT"
+// M-2
+yarn verify-rinkeby 0x29D00e504Ee554A57a1dD6170980DD032E8C0874 --constructor-args verify/erc20token.args.ts
+
 yarn run v1.22.18
-$ hardhat verify --network rinkeby 0x583790285609943225395c091e5D657E946574F0 'Health Token' HLT
+$ hardhat verify --network rinkeby 0x29D00e504Ee554A57a1dD6170980DD032E8C0874 'Health Token' HLT
 Nothing to compile
 No need to generate any newer typings.
 Successfully submitted source code for contract
-contracts/ERC20Token.sol:ERC20Token at 0x583790285609943225395c091e5D657E946574F0
+contracts/ERC20Token.sol:ERC20Token at 0x29D00e504Ee554A57a1dD6170980DD032E8C0874
 for verification on Etherscan. Waiting for verification result...
 
 Successfully verified contract ERC20Token on Etherscan.
-https://rinkeby.etherscan.io/address/0x583790285609943225395c091e5D657E946574F0#code
+https://rinkeby.etherscan.io/address/0x29D00e504Ee554A57a1dD6170980DD032E8C0874#code
 ✨  Done in 27.48s.
 ```
