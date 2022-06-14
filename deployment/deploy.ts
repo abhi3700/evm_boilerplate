@@ -22,12 +22,9 @@
 // // // We recommend this pattern to be able to use async/await everywhere
 // // // and properly handle errors.
 // main()
-//   .then(() => {
-//     throw new Error("Exit: 0");
-//   })
+//   .then()
 //   .catch((error: Error) => {
 //     console.error(error);
-//     // process.exit(1);
 //     throw new Error("Exit: 1");
 //   });
 
