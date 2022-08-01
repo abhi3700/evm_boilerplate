@@ -98,6 +98,14 @@ yarn verify <network_name> <deployed_contract_address> --constructor-args verify
 
 For multiple arguments, follow this [guide](https://hardhat.org/plugins/nomiclabs-hardhat-etherscan.html#multiple-api-keys-and-alternative-block-explorers).
 
+### Flatten
+
+```console
+yarn flatten <contract-filename-w-ext-with-dir> > ./flatten/<contract-filename-w-ext>
+```
+
+Then, the file can be used to upload the code manually (click on 'Contract' tab >> verify and publish) or using script (with Block explorer API as per the network)
+
 ### Deploy
 
 - Environment variables: Create a `.env` file with its values in [.env.example](./.env.example)

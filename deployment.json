@@ -1,0 +1,13 @@
+{
+  "name": "Health Token",
+  "symbol": "HLT",
+  "decimals": 18,
+  "totalSupply": "2000",
+  "accounts": [
+    "0xefd0D826b5Ebb432521149a6eb92076B2020FC75",
+    "0xA6c3438EBC26Ea6FdA7c555f2c8fB33ABE1D4516"
+  ],
+  "amounts": ["1000", "1000"],
+  "minTimelockAmount": 0,
+  "maxReleaseDelay": 346896000
+}
