@@ -120,12 +120,12 @@ $ npx hardhat node
 $ yarn hardhat deploy:Escrow --network localhost
 ```
 
-#### ETH Testnet - Rinkeby
+#### ETH Testnet - Goerli
 
 - Deploy the contracts
 
 ```console
-yarn hardhat deploy:Escrow --network rinkeby
+yarn hardhat deploy:Escrow --network goerli
 ```
 
 #### ETH Mainnet
