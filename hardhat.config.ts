@@ -74,7 +74,7 @@ const config: HardhatUserConfig = {
     // coverage: {
     //   url: "http://127.0.0.1:8555",
     // },
-    mainnet: {
+    eth: {
       url: `https://mainnet.infura.io/v3/${INFURA_API_KEY}`,
       chainId: 1,
       accounts: [`0x${DEPLOYER_PRIVATE_KEY}`],
@@ -94,11 +94,11 @@ const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
-        version: "0.8.6",
+        version: "0.8.13",
         settings: {
           optimizer: {
             enabled: true,
-            runs: 10000,
+            runs: 200,
           },
         },
       },
